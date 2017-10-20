@@ -5,7 +5,7 @@ public class Connections {
 	public java.sql.Connection getConnection() throws Exception{
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/libraryinfo","root","");
+				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/libraryinfo","root","1234");
 				return con;
 			}catch(Exception e) {
 				System.out.println(e);
